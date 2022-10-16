@@ -17,7 +17,7 @@
             <!-- Full Name -->
             <div class="form-group">
                 <label for="name">Full name</label>
-                <input type="text" id="name" placeholder="Full Name" required minlength="4" maxlength="50" name="name">
+                <input class="reset" type="text" id="name" placeholder="Full Name" required minlength="4" maxlength="50" name="name">
             </div>
             <!-- Select country -->
             <div class="form-group">
@@ -246,29 +246,29 @@
             <!-- Phone number -->
             <div class="form-group">
                 <label for="phone">Phone no.</label>
-                <input type="tel" id="phone" placeholder="9999999999" required name="phone">
+                <input class="reset" type="tel" id="phone" placeholder="9999999999" required name="phone">
             </div>
             <!-- Email address -->
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Email@address.give" required name="email">
+                <input class="reset" type="email" id="email" placeholder="Email@address.give" required name="email">
             </div>
             <!-- Website Url -->
             <div class="form-group">
                 <label for="website">Website URL</label>
-                <input type="text" id="website" placeholder="https://github.com/ritwikbasak07" required name="website">
+                <input class="reset" type="text" id="website" placeholder="https://github.com/ritwikbasak07" required name="website">
             </div>
             <!-- Password -->
             <div class="form-group">
                 <label for="password1">Password</label>
-                <input type="password" id="password1" placeholder="password" required
+                <input class="reset" type="password" id="password1" placeholder="password" required
                     pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,20}$"
                     title="Minimum 6 and maximum 20 characters, at least one uppercase letter, one lowercase letter, one number and one special character" onpaste="return false;" ondrop="return false;" autocomplete="off">
             </div>
             <!-- Confirm Password -->
             <div class="form-group">
                 <label for="password2">Confirm Password</label>
-                <input type="password" id="password2" placeholder="Confirm password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,20}$"
+                <input class="reset" type="password" id="password2" placeholder="Confirm password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,20}$"
                 title="Minimum 6 and maximum 20 characters, at least one uppercase letter, one lowercase letter, one number and one special character" name="password" onpaste="return false;" ondrop="return false;" autocomplete="off">
             </div>
             <button type="submit">Register</button>

@@ -3,7 +3,7 @@ const password1Element = document.getElementById('password1');
 const password2Element = document.getElementById('password2');
 const messageContainer = document.querySelector(".message-container");
 const message = document.getElementById('message');
-
+const clearData = Array.from(document.getElementsByClassName('reset'));
 
 let isValid = false;
 let passwordsMatch = false;
@@ -52,7 +52,16 @@ function storeFormData(){
         password: form.password.value,
     };
     // Do something with user data
-    
+
+}
+
+
+function resetValue(){
+    var reset = clearData;
+    clearData.forEach((element)=>{
+        if(element.value != ""){
+        element.value = ""
+    }    });
 }
 
 
@@ -65,6 +74,7 @@ function processFormData(e) {
     // Submit data IF valid
     if(isValid && passwordsMatch){
         storeFormData();
+    resetValue();
     }
 }
 
